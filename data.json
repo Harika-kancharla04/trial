@@ -1,0 +1,332 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "gender": "Male",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane.smith@example.com",
+            "gender": "Female",
+            "role": "Manager",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 3,
+            "name": "Michael Johnson",
+            "email": "michael.johnson@example.com",
+            "gender": "Male",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 4,
+            "name": "Emily Davis",
+            "email": "emily.davis@example.com",
+            "gender": "Female",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 5,
+            "name": "Robert Brown",
+            "email": "robert.brown@example.com",
+            "gender": "Male",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 6,
+            "name": "Linda Wilson",
+            "email": "linda.wilson@example.com",
+            "gender": "Female",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 7,
+            "name": "David Miller",
+            "email": "david.miller@example.com",
+            "gender": "Male",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 8,
+            "name": "Sarah Martinez",
+            "email": "sarah.martinez@example.com",
+            "gender": "Female",
+            "role": "Manager",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 9,
+            "name": "Jessica Thomas",
+            "email": "jessica.thomas@example.com",
+            "gender": "Female",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 10,
+            "name": "Sophia Gonzalez",
+            "email": "sophia.gonzalez@example.com",
+            "gender": "Female",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 11,
+            "name": "Olivia Clark",
+            "email": "olivia.clark@example.com",
+            "gender": "Female",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 12,
+            "name": "Daniel Lewis",
+            "email": "daniel.lewis@example.com",
+            "gender": "Male",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 13,
+            "name": "Isabella Walker",
+            "email": "isabella.walker@example.com",
+            "gender": "Female",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 14,
+            "name": "Ava Scott",
+            "email": "ava.scott@example.com",
+            "gender": "Female",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 15,
+            "name": "Logan King",
+            "email": "logan.king@example.com",
+            "gender": "Male",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 16,
+            "name": "Chris Evans",
+            "email": "chris.evans@example.com",
+            "gender": "Male",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 17,
+            "name": "Natalie Green",
+            "email": "natalie.green@example.com",
+            "gender": "Female",
+            "role": "Manager",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 18,
+            "name": "Elijah Moore",
+            "email": "elijah.moore@example.com",
+            "gender": "Male",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 19,
+            "name": "Emma White",
+            "email": "emma.white@example.com",
+            "gender": "Female",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 20,
+            "name": "Liam Harris",
+            "email": "liam.harris@example.com",
+            "gender": "Male",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        }
+    ],
+    "admins": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "gender": "Male",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 5,
+            "name": "Robert Brown",
+            "email": "robert.brown@example.com",
+            "gender": "Male",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 9,
+            "name": "Jessica Thomas",
+            "email": "jessica.thomas@example.com",
+            "gender": "Female",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 11,
+            "name": "Olivia Clark",
+            "email": "olivia.clark@example.com",
+            "gender": "Female",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 14,
+            "name": "Ava Scott",
+            "email": "ava.scott@example.com",
+            "gender": "Female",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 18,
+            "name": "Elijah Moore",
+            "email": "elijah.moore@example.com",
+            "gender": "Male",
+            "role": "Admin",
+            "actions": "Edit | Delete"
+        }
+    ],
+    "managers": [
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane.smith@example.com",
+            "gender": "Female",
+            "role": "Manager",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 8,
+            "name": "Sarah Martinez",
+            "email": "sarah.martinez@example.com",
+            "gender": "Female",
+            "role": "Manager",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 17,
+            "name": "Natalie Green",
+            "email": "natalie.green@example.com",
+            "gender": "Female",
+            "role": "Manager",
+            "actions": "Edit | Delete"
+        }
+    ],
+    "employees": [
+        {
+            "id": 4,
+            "name": "Emily Davis",
+            "email": "emily.davis@example.com",
+            "gender": "Female",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 7,
+            "name": "David Miller",
+            "email": "david.miller@example.com",
+            "gender": "Male",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 13,
+            "name": "Isabella Walker",
+            "email": "isabella.walker@example.com",
+            "gender": "Female",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 16,
+            "name": "Chris Evans",
+            "email": "chris.evans@example.com",
+            "gender": "Male",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 20,
+            "name": "Liam Harris",
+            "email": "liam.harris@example.com",
+            "gender": "Male",
+            "role": "Employee",
+            "actions": "Edit | Delete"
+        }
+    ],
+    "clients": [
+        {
+            "id": 3,
+            "name": "Michael Johnson",
+            "email": "michael.johnson@example.com",
+            "gender": "Male",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 6,
+            "name": "Linda Wilson",
+            "email": "linda.wilson@example.com",
+            "gender": "Female",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 10,
+            "name": "Sophia Gonzalez",
+            "email": "sophia.gonzalez@example.com",
+            "gender": "Female",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 12,
+            "name": "Daniel Lewis",
+            "email": "daniel.lewis@example.com",
+            "gender": "Male",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 15,
+            "name": "Logan King",
+            "email": "logan.king@example.com",
+            "gender": "Male",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        },
+        {
+            "id": 19,
+            "name": "Emma White",
+            "email": "emma.white@example.com",
+            "gender": "Female",
+            "role": "Client",
+            "actions": "Edit | Delete"
+        }
+    ]
+}

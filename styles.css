@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 35, 40);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .header img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ff {
+    color: rgb(206, 207, 207);
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 10px;
+  }
+  
+  /* Profile Section */
+  .profile {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .profile:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  .profile span {
+    margin-left: 8px;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Place below the profile section */
+    right: 5rem; /* Align to the right */
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    min-width: 120px;
+    padding: 10px 0;
+  }
+  
+  .dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown ul li {
+    padding: 10px 16px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .dropdown ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .dropdown ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .dropdown ul li a:hover {
+    color: #007bff; /* Change to your brand's color */
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+  }
+  
+  #prof {
+    margin-right: 10px;
+    font-size: 50px;
+    transition: 0.1s;
+  }
+  
+  #prof:hover {
+    cursor: pointer;
+    outline: 5px solid rgba(213, 217, 221, 0.863);
+    border-radius: 50%;
+  }
+  
+  .profile span {
+    font-size: 1.3rem;
+  }
+  
+  .sidebar {
+    position: fixed;
+    left: 0;
+    width: 15rem;
+    height: 98vh;
+    background: linear-gradient(180deg, rgb(25, 35, 40), rgb(25, 35, 40));
+    padding: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 10;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    margin: 0px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    color: #000;
+    font-weight: 700;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(213, 217, 221, 0.863);
+    transform: scale(1.05);
+  }
+  
+  .sidebar a:active {
+    color: #000;
+    font-weight: 700;
+    background-color: rgba(213, 217, 221, 0.863);
+  }
+  
+  .hamburger {
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    position: fixed;
+    top: 20px;
+    right: 1.2rem;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  /* Main content styling */
+  .maincontent {
+    margin-left: 16rem;
+    padding: 20px;
+    margin-top: 6rem;
+  }
+  
+  .maincontent1 {
+    margin-left: 16rem;
+    padding: 1.1rem;
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .bx {
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  
+  .inner {
+    background-color: #333;
+    border-radius: 5px;
+    justify-items: center;
+    align-content: center;
+    margin: 15px;
+    min-height: 85%;
+    min-width: 200px;
+  }
+  
+  .inner h1 {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .div1:hover {
+    /* box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5); */
+    scale: 1.03;
+  }
+  
+  
+  
+  
+  
+  /* General Table Style */
+  .data-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin: 20px 0; /* Spacing above and below */
+    font-size: 16px; /* Font size */
+    font-family: Arial, sans-serif; /* Font family */
+    text-align: left; /* Align text to the left */
+  }
+  
+  
+  /* Table Header Styling */
+  .data-table thead tr {
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text */
+    text-transform: uppercase; /* Uppercase letters */
+    font-weight: bold; /* Bold text */
+  }
+  
+  
+  /* Table Cell Styles */
+  .data-table th, .data-table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 12px; /* Padding inside cells */
+  }
+  
+  /* Alternate Row Colors */
+  .data-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+  }
+  
+  /* Hover Effect */
+  .data-table tbody tr:hover {
+    background-color: #f1f1f1; /* Slightly darker gray on hover */
+  }
+  
+  /* Align Actions Column */
+  .data-table td:last-child {
+    text-align: center; /* Center align action buttons */
+  }
+  
+  /* Action Button Styles */
+  .data-table td button {
+    padding: 5px 10px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .data-table td button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  
+  .controls {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .controls input,
+  .controls select,
+  .controls button {
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .controls button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Home Page Styles */
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    color: white;
+    min-height: calc(100vh - 6rem); /* Full height minus header */
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    color: #4caf50;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section h1 .brand-name {
+    color: #ffd700;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #ddd;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .hero-section .cta-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .hero-section .cta-btn:hover {
+    background: #45a049;
+    transform: scale(1.1);
+  }
+  
+  /* Features Section */
+  .features-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .feature {
+    background: #293145;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  .feature i {
+    font-size: 3rem;
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffd700;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  
+  
+  
+  
+  /* To-Do Page Styles */
+  #taskInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    display: block;
+    margin: 0 1rem;
+  }
+  
+  #addbtn {
+    padding: 6px 12px; /* Adjusted padding */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Adjusted font size for add button */
+    display: block;
+    margin-top: 10px;
+  }
+  
+  #addbtn i {
+    font-size: 16px; /* Adjusted icon size in add button */
+  }
+  
+  #addbtn:hover {
+    background-color: #45a049;
+  }
+  
+  #listItems {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #listItems li {
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Task actions (tick and delete buttons) */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px; /* Reduced padding for smaller buttons */
+    font-size: 12px; /* Reduced font size for buttons */
+    cursor: pointer;
+    margin-left: 5px; /* Space between buttons */
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  /* Style for delete button */
+  button.delete-button {
+    background-color: red;
+  }
+  
+  
+  /* Style for the icons inside the buttons */
+  button i {
+    font-size: 14px; /* Adjusted the size of the icons */
+  }
+  
+  /* Task actions buttons in the list (tick and delete) */
+  button.tick {
+    background-color: rgb(33, 131, 33);
+    
+  }
+  
+  
+  
+  
+  /* Title and input section */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the to-do list container */
+  #todoPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      width: 100%;
+    }
+    
+    .sidebar {
+      width: 12rem;
+    }
+    
+    .maincontent {
+      margin-left: 12rem;
+    }
+    
+    .hamburger {
+      display: block;
+    }
+    
+    .div1 {
+      min-width: 100%;
+    }
+    .hero-section h1 {
+      font-size: 2.5rem;
+    }
+    
+    .features-section {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .feature {
+      width: 80%;
+    }
+    .maincontent {
+      margin-left: 0;
+    }
+    
+    .logo h1 {
+      font-size: 1.5rem;
+    }
+    
+    .profile span {
+      font-size: 1rem;
+    }
+    
+    .ff {
+      font-size: 1.5rem;
+    }
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-section p {
+      font-size: 1rem;
+    }
+    
+    .hero-section .cta-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+  
+    .sidebar {
+      transform: translateX(-100%);
+      width: 12rem;
+    }
+  
+    .sidebar.show {
+      transform: translateX(0);
+    }
+  
+    .header .hamburger {
+      display: block;
+    }
+  
+    .maincontent {
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
+      width: 100%;
+    }
+  
+    .sidebar {
+      transform: translateX(-100%);
+      width: 12rem;
+      transition: transform 0.3s ease;
+    }
+  
+    .sidebar.show {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+  
+    .maincontent {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-right: 10px;
+    }
+  
+    .profile img {
+      width: 50px; /* Adjust the size as needed */
+      height: 50px;
+      border-radius: 50%;
+      margin-bottom: 5px;
+    }
+  
+    .profile span {
+      font-size: 1rem;
+      margin-top: 5px;
+      margin-right: 5px;
+    }
+    .header .profile {
+      margin-right: 40px; /* Add margin to create space between profile and hamburger */
+    }
+  }
+  
