@@ -1,6 +1,6 @@
 // Fetching data from JSON file based on type (category)
 function fetchData(type) {
-    return fetch("data.json")
+    return fetch("https://harika-kancharla04.github.io/trial/data.json")
         .then((response) => response.json())
         .then((data) => {
             switch (type) {
@@ -336,7 +336,7 @@ function fetchData(type) {
             resolve(JSON.parse(storedData)); // Return stored data if available
         } else {
             // Fetch data from JSON file and store in localStorage
-            fetch("data.json")
+            fetch("https://harika-kancharla04.github.io/trial/data.json")
                 .then((response) => response.json())
                 .then((data) => {
                     localStorage.setItem(type, JSON.stringify(data[type])); // Store fetched data in localStorage
